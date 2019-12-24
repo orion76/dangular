@@ -1,0 +1,13 @@
+uuid: af055157-7556-444d-a3c7-c355dcc4a901
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: N0RDBTqiK4dKoN4p4oW2j0SGWycdHyALUe9M-Ofp89U
+id: node_promote_action
+label: 'Вывести материал на главную страницу'
+type: node
+plugin: node_promote_action
+configuration: {  }
