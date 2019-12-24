@@ -1,0 +1,18 @@
+uuid: 83f323ca-b9b1-4679-84f6-1e4656211f7e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.registration
+id: node.registration.title
+field_name: title
+entity_type: node
+bundle: registration
+label: 'Как к Вам обращаться'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

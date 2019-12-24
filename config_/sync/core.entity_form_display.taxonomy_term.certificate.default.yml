@@ -1,0 +1,41 @@
+uuid: 8e2a9521-9272-494c-b0d9-13638a69c36a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.certificate.field_full_name
+    - taxonomy.vocabulary.certificate
+  module:
+    - text
+id: taxonomy_term.certificate.default
+targetEntityType: taxonomy_term
+bundle: certificate
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_full_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  path: true

@@ -1,0 +1,8 @@
+uuid: 8b2a3d61-1c3c-4594-a8d0-015ef7f824b4
+langcode: ru
+status: true
+dependencies: {  }
+id: russia_standart_with_time
+label: 'Стандарт с временем'
+locked: false
+pattern: 'd.m.Y H:i'

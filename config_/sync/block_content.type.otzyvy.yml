@@ -1,0 +1,8 @@
+uuid: b550ae68-9c6d-43ce-b934-3b773901a019
+langcode: ru
+status: true
+dependencies: {  }
+id: otzyvy
+label: Отзывы
+revision: 0
+description: ''

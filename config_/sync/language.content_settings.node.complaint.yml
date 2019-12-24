@@ -1,0 +1,11 @@
+uuid: 4cbdd8f8-4ff7-4bc7-a185-1e0fa5bfe5d6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.complaint
+id: node.complaint
+target_entity_type_id: node
+target_bundle: complaint
+default_langcode: site_default
+language_alterable: false

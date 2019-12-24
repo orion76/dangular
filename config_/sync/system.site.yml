@@ -1,0 +1,15 @@
+uuid: 3488ebba-1884-4fa6-9472-54130cfd3c64
+name: 'Наименование компании'
+mail: komdom@rambler.ru.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/109
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ru
+default_langcode: ru
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

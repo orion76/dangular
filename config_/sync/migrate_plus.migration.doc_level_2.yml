@@ -1,0 +1,66 @@
+id: doc_level_2
+label: 'Doc level 2'
+migration_group: mercury_doc
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: csv_tnved
+  urls:
+    - 'public://doc_import_data/tnved2.csv'
+  level_tnved: 2
+  ids:
+    - id
+  codes:
+    -
+      code_1:
+        - '01'
+        - '02'
+        - '03'
+        - '04'
+        - '05'
+  delimiter: '|'
+  fields:
+    -
+      name: id
+      label: ID
+    -
+      name: code_1
+      label: 'Code 1'
+    -
+      name: code_2
+      label: 'Code 2'
+    -
+      name: name
+      label: Name
+    -
+      name: description
+      label: Description
+    -
+      name: date_begin
+      label: 'date Begin'
+    -
+      name: date_end
+      label: 'date End'
+process:
+  vid:
+    default_value: tn_ved_level_1
+    plugin: default_value
+  field_code_1: code_1
+  field_code_2: code_2
+  name: name
+  field_description: description
+  field_date_begin: date_begin
+  field_date_end: date_end
+  parent:
+    plugin: migration_lookup
+    migration: doc_level_1
+    source: parent
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: tn_ved_level_2
+migration_dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - mercury_import
+langcode: ru

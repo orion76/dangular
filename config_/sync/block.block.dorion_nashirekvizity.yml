@@ -1,0 +1,25 @@
+uuid: b03af756-2e3b-427c-816c-2e39fe5e1303
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:104c496e-54fe-42b0-8c17-34276174e790'
+  module:
+    - block_content
+  theme:
+    - dorion
+id: dorion_nashirekvizity
+theme: dorion
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:104c496e-54fe-42b0-8c17-34276174e790'
+settings:
+  id: 'block_content:104c496e-54fe-42b0-8c17-34276174e790'
+  label: 'Наши реквизиты'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,40 @@
+uuid: 778dcfc7-912a-4ac4-891b-e65566295d69
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_form.body
+    - field.field.node.contact_form.field_messages
+    - node.type.contact_form
+  module:
+    - comment
+    - text
+    - user
+id: node.contact_form.default
+targetEntityType: node
+bundle: contact_form
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_messages:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

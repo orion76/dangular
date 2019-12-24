@@ -1,0 +1,8 @@
+uuid: 0fabbe7e-fa31-4c9c-8cd3-ff255f2b0afc
+langcode: ru
+status: true
+dependencies: {  }
+name: '(прайс) Единицы измерения'
+vid: price_unit
+description: ''
+weight: 0

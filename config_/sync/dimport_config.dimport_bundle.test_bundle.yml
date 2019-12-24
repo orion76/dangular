@@ -1,0 +1,7 @@
+uuid: 6e359f4f-5053-49e1-8ae0-e83879294767
+langcode: ru
+status: true
+dependencies: {  }
+id: test_bundle
+label: 'test bundle'
+sourceId: test

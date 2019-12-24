@@ -1,0 +1,22 @@
+uuid: ed3ee160-125d-46d9-871e-d72884be9ba0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mercury_radix
+_core:
+  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
+id: mercury_radix_breadcrumbs
+theme: mercury_radix
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Строка навигации'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,13 @@
+{
+    "name": "dorion_helper",
+    "type": "drupal-module",
+    "description": "Helper module for theme Dorion",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/dorion_helper",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/dorion_helper",
+        "source": "http://cgit.drupalcode.org/dorion_helper"
+    }
+}

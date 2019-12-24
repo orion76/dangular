@@ -1,0 +1,31 @@
+uuid: 2c04fed7-4956-485e-8c69-e18fa807486e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    plain_text: plain_text
+    basic_html: '0'
+    restricted_html: '0'
+_core:
+  default_config_hash: R__6wc-rMfFMO8d7jcgqnqiA92j8spKhcc5MiqecrMc
+id: block_content.basic.body
+field_name: body
+entity_type: block_content
+bundle: basic
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

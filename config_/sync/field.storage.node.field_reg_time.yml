@@ -1,0 +1,27 @@
+uuid: d8e0fda1-e232-42d0-b555-3501d6fe4b4c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_reg_time
+field_name: field_reg_time
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'за 1 день'
+    -
+      value: 7
+      label: 'за 7 дней'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

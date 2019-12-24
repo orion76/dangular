@@ -1,0 +1,9 @@
+dorion_attributes.config.element.bem:
+  type: mapping
+  label: 'Bem Element'
+  mapping:
+    name:
+      type: string
+    class:
+      type: string
+

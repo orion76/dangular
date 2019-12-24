@@ -1,0 +1,22 @@
+uuid: 96a748d0-71a3-4785-b069-60a6e0b4fec7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tariff_maintenance
+id: node.tariff_maintenance.status
+field_name: status
+entity_type: node
+bundle: tariff_maintenance
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

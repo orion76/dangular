@@ -1,0 +1,18 @@
+uuid: 87f7aff8-015d-4cc2-8c54-5e5b8e489a94
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Документ
+type: document
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

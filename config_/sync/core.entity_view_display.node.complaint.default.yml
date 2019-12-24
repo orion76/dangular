@@ -1,0 +1,40 @@
+uuid: 0ce73698-64ca-407e-b485-ceab0e7fb5b8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.complaint.field_contacts
+    - field.field.node.complaint.field_content
+    - node.type.complaint
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.complaint.default
+targetEntityType: node
+bundle: complaint
+mode: default
+content:
+  field_contacts:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_content:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

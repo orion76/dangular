@@ -1,0 +1,22 @@
+uuid: 3a95560a-da9d-4b31-b2a2-a3ca1c5008ea
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.otzyvy
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.otzyvy.body
+field_name: body
+entity_type: block_content
+bundle: otzyvy
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

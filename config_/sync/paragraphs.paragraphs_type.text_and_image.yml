@@ -1,0 +1,14 @@
+uuid: 3f1afce6-6f44-45e1-b12e-4ee06c9fad92
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs_plugins
+id: text_and_image
+label: text_and_image
+icon_uuid: null
+description: ''
+behavior_plugins:
+  paragraph_title:
+    enabled: true
+  paragraph_css_class: {  }

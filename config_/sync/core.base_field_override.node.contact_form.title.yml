@@ -1,0 +1,18 @@
+uuid: fc1805ad-76f5-465b-b196-e6572fb4c80e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.contact_form
+id: node.contact_form.title
+field_name: title
+entity_type: node
+bundle: contact_form
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

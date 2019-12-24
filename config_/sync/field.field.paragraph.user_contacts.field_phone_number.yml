@@ -1,0 +1,21 @@
+uuid: 03e7ac8f-f302-4936-a700-40c8f4ec198b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_phone_number
+    - paragraphs.paragraphs_type.user_contacts
+  module:
+    - telephone
+id: paragraph.user_contacts.field_phone_number
+field_name: field_phone_number
+entity_type: paragraph
+bundle: user_contacts
+label: 'Номер телефона'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,23 @@
+uuid: 9a9e7c8c-19b1-420c-8442-b750d0ecaa0c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price
+    - paragraphs.paragraphs_type.price_maintenance
+id: paragraph.price_maintenance.field_price
+field_name: field_price
+entity_type: paragraph
+bundle: price_maintenance
+label: Цена
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

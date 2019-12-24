@@ -1,0 +1,22 @@
+uuid: dc5fd406-be51-4ffe-9f1e-c423d5bada19
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dorion
+_core:
+  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
+id: dorion_breadcrumbs
+theme: dorion
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Строка навигации'
+  provider: system
+  label_display: '0'
+visibility: {  }

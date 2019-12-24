@@ -1,0 +1,29 @@
+uuid: 4163ff49-ac80-4c31-bcd4-2d8f26b49dd6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate
+    - node.type.service_maintenance
+    - taxonomy.vocabulary.certificate
+id: node.service_maintenance.field_certificate
+field_name: field_certificate
+entity_type: node
+bundle: service_maintenance
+label: Сертификат
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      certificate: certificate
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

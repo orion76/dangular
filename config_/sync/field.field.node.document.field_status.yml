@@ -1,0 +1,29 @@
+uuid: badfc2bc-32c2-433b-aa84-0fd5d5eb3c8c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status
+    - node.type.document
+    - taxonomy.vocabulary.doc_status
+id: node.document.field_status
+field_name: field_status
+entity_type: node
+bundle: document
+label: Статус
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      doc_status: doc_status
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

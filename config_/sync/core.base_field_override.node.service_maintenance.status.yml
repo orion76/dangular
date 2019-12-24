@@ -1,0 +1,22 @@
+uuid: 002d3cb2-1ac2-4196-b2a9-43914d3be8a7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.service_maintenance
+id: node.service_maintenance.status
+field_name: status
+entity_type: node
+bundle: service_maintenance
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

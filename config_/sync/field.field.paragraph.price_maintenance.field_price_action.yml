@@ -1,0 +1,23 @@
+uuid: 117fad51-f8d6-40bb-8d75-5c405b7f04d8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price_action
+    - paragraphs.paragraphs_type.price_maintenance
+id: paragraph.price_maintenance.field_price_action
+field_name: field_price_action
+entity_type: paragraph
+bundle: price_maintenance
+label: Акция
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: '( <span class="action-title">акция</span> '
+  suffix: )
+field_type: decimal

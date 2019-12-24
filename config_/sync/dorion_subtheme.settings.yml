@@ -1,0 +1,29 @@
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: false
+  path: 'public://logo_0.png'
+favicon:
+  use_default: true
+____: default
+dorion_subtheme__region__sticky__navbar_branding: default
+dorion_subtheme__region__sticky__navbar_left: default
+dorion_subtheme__region__sticky__navbar_right: default
+dorion_subtheme__region__sticky__navbar_top: sticky-top
+dorion_subtheme__region__sticky__header: default
+dorion_subtheme__region__sticky__content: default
+dorion_subtheme__region__sticky__page_bottom: default
+dorion_subtheme__region__sticky__footer: default
+dorion_subtheme__region__add_branding__navbar_first: 1
+dorion_subtheme__region__placement__navbar_first: default
+dorion_subtheme__region__add_branding__navbar_second: 0
+dorion_subtheme__region__placement__navbar_second: sticky-top
+dorion_subtheme__navbar__collapsible__navbar_branding: 0
+dorion_subtheme__region__placement__navbar_branding: default
+dorion_subtheme__navbar__collapsible__navbar_first: 0
+dorion_subtheme__navbar__collapsible__navbar_second: 1
+dorion_subtheme__navbar__collapsible__navbar_third: 0
+dorion_subtheme__region__placement__navbar_third: default

@@ -1,0 +1,43 @@
+dorion_element.context:
+  type: config_entity
+
+dorion_element.plugin:
+  type: mapping
+  mapping:
+    plugin_type:
+      type: string
+      label: 'Plugin name'
+    config_id:
+      type: string
+      label: 'Plugin config id'
+
+dorion_element.children:
+  type:
+    sequence
+  sequence:
+    type: string
+
+dorion_element.entity.*:
+  type: config_entity
+  label: 'Dorion element'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    element_type:
+      type: string
+      label: 'Plugin ID'
+    children:
+      label: 'Children'
+      type: dorion_element.children
+    context:
+      type: sequence
+      secuence:
+        type: dorion_element.context
+    attributes:
+      type: sequence
+      secuence:
+        type: dorion_element.plugin

@@ -1,0 +1,13 @@
+{
+    "name": "gpb_form_elements",
+    "type": "drupal-module",
+    "description": "Custom form elements collection",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/gpb_form_elements",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/gpb_form_elements",
+        "source": "http://cgit.drupalcode.org/gpb_form_elements"
+    }
+}

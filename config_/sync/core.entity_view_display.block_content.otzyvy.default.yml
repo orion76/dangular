@@ -1,0 +1,34 @@
+uuid: 5daefa4e-0ece-4264-ab78-07dd02cbf65f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.otzyvy
+    - field.field.block_content.otzyvy.body
+    - field.field.block_content.otzyvy.field_review
+  module:
+    - comment
+    - text
+id: block_content.otzyvy.default
+targetEntityType: block_content
+bundle: otzyvy
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_review:
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+hidden:
+  langcode: true

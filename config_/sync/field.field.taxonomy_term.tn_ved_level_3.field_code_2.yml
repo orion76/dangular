@@ -1,0 +1,19 @@
+uuid: 877165d0-64c8-4293-abd1-105994c60c93
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_code_2
+    - taxonomy.vocabulary.tn_ved_level_3
+id: taxonomy_term.tn_ved_level_3.field_code_2
+field_name: field_code_2
+entity_type: taxonomy_term
+bundle: tn_ved_level_3
+label: 'Код 2'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

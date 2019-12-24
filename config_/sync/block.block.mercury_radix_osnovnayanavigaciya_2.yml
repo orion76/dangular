@@ -1,0 +1,25 @@
+uuid: ec044aba-f241-43a6-8df5-1d48666279fb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - mercury_radix
+id: mercury_radix_osnovnayanavigaciya_2
+theme: mercury_radix
+region: navbar_left
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

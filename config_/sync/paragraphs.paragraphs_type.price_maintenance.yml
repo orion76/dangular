@@ -1,0 +1,9 @@
+uuid: bdf7c3b7-4f88-4594-8170-d1f5e80a6b25
+langcode: ru
+status: true
+dependencies: {  }
+id: price_maintenance
+label: Цена(обслуживание)
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

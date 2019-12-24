@@ -1,0 +1,127 @@
+<?php
+
+/**
+ * @file
+ * Contains mercury.module.
+ */
+
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mercury_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mercury module.
+    case 'help.page.mercury':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Site helper module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function mercury_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $n = 0;
+  switch ($form_id) {
+    case 'node_review_form':
+    case 'node_complaint_form':
+      $form['advanced']['#access'] = FALSE;
+      $form['revision_information']['#access'] = FALSE;
+      $form['status']['#access'] = FALSE;
+      $form['meta']['#access'] = FALSE;
+      break;
+    case 'node_registration_form':
+      $form['field_reg_time']['widget']['#after_build'][] = 'mercury_registration_radios_after_build';
+      break;
+  }
+}
+
+function mercury_registration_radios_after_build($variables) {
+  $n = 0;
+
+  $block_1_day_id = 24;
+  $block_7_day_id = 25;
+
+  $block_1_day = \Drupal::entityTypeManager()->getStorage('block_content')->load($block_1_day_id);
+  $block_7_day = \Drupal::entityTypeManager()->getStorage('block_content')->load($block_7_day_id);
+
+  $variables[1]['#description'] = \Drupal::entityTypeManager()->getViewBuilder('block_content')->view($block_1_day);
+  $variables[7]['#description'] = \Drupal::entityTypeManager()->getViewBuilder('block_content')->view($block_7_day);
+  return $variables;
+}
+
+function _mercury_get_registration_time() {
+  $current_uri = \Drupal::request()->getRequestUri();
+  $parts = explode('/', $current_uri);
+  $start = array_search('registration', $parts);
+  if ($start === FALSE) {
+    return FALSE;
+  }
+  else {
+    $parts = array_slice($parts, $start);
+    list($day) = explode('-', $parts[1]);
+    return is_numeric($day) ? $day : FALSE;
+  }
+}
+
+function mercury_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  // @TODO Delete example
+  $field_definition = $context['items']->getFieldDefinition();
+  if ($field_definition->getType() == 'mytype') {
+    $element['#attributes']['class'][] = 'myclass';
+  }
+}
+
+function mercury_preprocess_form(&$vars) {
+
+  if (!empty($vars['element']) && $vars['element']['#form_id'] === 'node_review_form') {
+
+  }
+}
+
+function mercury_preprocess_field_multiple_value_form(&$vars) {
+  $n = 0;
+  if (!empty($vars['element']) && $vars['element']['#id'] === 'edit-field-contacts') {
+    unset($vars['element']['#prefix']);
+    unset($vars['element']['#suffix']);
+    unset($vars['element'][0]['#theme_wrappers']);
+    unset($vars['elements'][0]['#theme_wrappers']);
+    unset($vars['elements'][0]['subform']['#theme_wrappers']);
+    $vars['elements'][0]['top']['#access'] = FALSE;
+  }
+
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function mercury_theme_suggestions_fieldset(array $variables) {
+  $suggestions = [];
+  $element = $variables['element'];
+
+  $suggestions[] = 'fieldset__' . $element['#type'];
+  if (isset($element['#field_name'])) {
+    $suggestions[] = 'fieldset__' . $element['#type'] . '__' . $element['#field_name'];
+  }
+
+
+  return $suggestions;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function mercury_theme_suggestions_form_element_alter(&$suggestions, array $variables) {
+  $element = $variables['element'];
+  switch ($element['#type']) {
+    case 'radio':
+      //      array_unshift($suggestions, 'form_element__' . $element['#type'] . '__' . str_replace('-', '_', $element['#name']));
+      $n = 0;
+      break;
+  }
+}

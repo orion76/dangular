@@ -1,0 +1,11 @@
+uuid: 7af7ee49-8b49-49d5-b14b-5201ee772480
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.yandex_map
+id: block_content.yandex_map
+target_entity_type_id: block_content
+target_bundle: yandex_map
+default_langcode: site_default
+language_alterable: false

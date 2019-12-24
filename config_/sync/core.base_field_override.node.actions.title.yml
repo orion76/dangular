@@ -1,0 +1,18 @@
+uuid: c75857ee-e929-414c-933d-da98069f173f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.actions
+id: node.actions.title
+field_name: title
+entity_type: node
+bundle: actions
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

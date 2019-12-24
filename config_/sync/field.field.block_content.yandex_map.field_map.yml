@@ -1,0 +1,24 @@
+uuid: 839d1e1c-5ae5-4f7b-8c28-c0532779bdd6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.yandex_map
+    - field.storage.block_content.field_map
+  module:
+    - yamaps
+id: block_content.yandex_map.field_map
+field_name: field_map
+entity_type: block_content
+bundle: yandex_map
+label: map
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  enable_placemarks: 1
+  enable_lines: 1
+  enable_polygons: 1
+field_type: yamaps

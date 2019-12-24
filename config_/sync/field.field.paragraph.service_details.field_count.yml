@@ -1,0 +1,23 @@
+uuid: 760bb535-ea8d-493a-84f1-df12c09fae81
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_count
+    - paragraphs.paragraphs_type.service_details
+id: paragraph.service_details.field_count
+field_name: field_count
+entity_type: paragraph
+bundle: service_details
+label: Количество
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,27 @@
+uuid: 2d628168-0ed3-4fb7-bc34-50d870aae112
+langcode: ru
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_count_prefix
+field_name: field_count_prefix
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: to
+      label: до
+    -
+      value: from
+      label: от
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

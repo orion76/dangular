@@ -1,0 +1,28 @@
+uuid: 5a5e2c5a-520f-4c12-aaea-eff4f4424b82
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tariff_d
+    - node.type.service_maintenance
+    - node.type.tariff_maintenance
+id: node.service_maintenance.field_tariff_d
+field_name: field_tariff_d
+entity_type: node
+bundle: service_maintenance
+label: 'Тариф D'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tariff_maintenance: tariff_maintenance
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 64314a18-d685-4759-b553-fa226463a3c0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_price_action
+field_name: field_price_action
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

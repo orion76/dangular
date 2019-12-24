@@ -1,0 +1,15 @@
+services:
+
+
+#  dorion_attributes.repository:
+#    class: Drupal\dorion_attributes\DorionAttributesRepository
+#    arguments: ['@entity_type.manager']
+
+#  dorion_attributes.theme_config:
+#    class: Drupal\dorion_attributes\DorionThemeConfig
+#    arguments: ['@dorion_helper.bem_config.repository','@dorion_helper.bem','@context.repository','@entity_type.manager']
+
+  plugin.manager.dorion_element:
+    class: Drupal\dorion_element\DorionElementPluginManager
+    parent: default_plugin_manager
+

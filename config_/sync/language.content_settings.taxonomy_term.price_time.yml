@@ -1,0 +1,11 @@
+uuid: 9f11598b-30da-45bc-bf57-da27a8bb8f5d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.price_time
+id: taxonomy_term.price_time
+target_entity_type_id: taxonomy_term
+target_bundle: price_time
+default_langcode: site_default
+language_alterable: false

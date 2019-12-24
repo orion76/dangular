@@ -1,0 +1,49 @@
+uuid: bd829a8b-7ee7-40ed-bda0-f9cf645db075
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.tariff_register.body
+    - field.field.node.tariff_register.field_price
+    - field.field.node.tariff_register.field_register_time
+    - node.type.tariff_register
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.tariff_register.default
+targetEntityType: node
+bundle: tariff_register
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_price:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_register_time:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

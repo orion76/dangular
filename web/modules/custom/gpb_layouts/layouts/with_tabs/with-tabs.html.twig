@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a four-column 25%-25%-25%-25% layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = [
+  'layout',
+  'layout--with-tabs',
+] %}
+{% if content %}
+
+  <div{{ attributes.addClass(classes) }}>
+
+    {{ tabs }}
+    <div class="tab-content">
+    {% for region in regions %}
+
+    <div{{ region.attributes }}>
+      {{ region }}
+    </div>
+
+    {% endfor %}
+    </div>
+
+  </div>
+{% endif %}

@@ -1,0 +1,10 @@
+uuid: 7ad0f76e-9ac1-4fc6-aa4b-46b7c0a03f60
+langcode: ru
+status: true
+dependencies: {  }
+id: 7ad0f76e-9ac1-4fc6-aa4b-46b7c0a03f60
+label: form
+element_type: form
+children: null
+context: null
+attributes: null

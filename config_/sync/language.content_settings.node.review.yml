@@ -1,0 +1,11 @@
+uuid: 2a6d61cc-2541-46a6-92bb-039f48454c7c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.review
+id: node.review
+target_entity_type_id: node
+target_bundle: review
+default_langcode: site_default
+language_alterable: false

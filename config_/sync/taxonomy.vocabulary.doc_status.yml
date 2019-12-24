@@ -1,0 +1,8 @@
+uuid: 82bb69d9-19eb-460c-a5aa-d86d4083c8ad
+langcode: ru
+status: true
+dependencies: {  }
+name: '(док) Статус'
+vid: doc_status
+description: ''
+weight: 0

@@ -1,0 +1,11 @@
+uuid: 302b70b4-ec07-49b0-a499-8ac465f763ea
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.doc_npa_type
+id: taxonomy_term.doc_npa_type
+target_entity_type_id: taxonomy_term
+target_bundle: doc_npa_type
+default_langcode: site_default
+language_alterable: false

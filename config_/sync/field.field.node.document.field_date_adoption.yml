@@ -1,0 +1,21 @@
+uuid: 30d3e98b-ae20-4a07-bec6-ce06308bb8e1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_adoption
+    - node.type.document
+  module:
+    - datetime
+id: node.document.field_date_adoption
+field_name: field_date_adoption
+entity_type: node
+bundle: document
+label: 'Дата принятия'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

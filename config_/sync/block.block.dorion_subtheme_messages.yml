@@ -1,0 +1,22 @@
+uuid: 7f58f539-bfd5-47ed-a536-05ec5ad8170c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dorion_subtheme
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: dorion_subtheme_messages
+theme: dorion_subtheme
+region: header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Сообщения статуса'
+  provider: system
+  label_display: '0'
+visibility: {  }

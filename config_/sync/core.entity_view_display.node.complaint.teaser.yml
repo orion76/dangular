@@ -1,0 +1,21 @@
+uuid: 3de8bf21-7d9b-423f-b4af-9a5b2004c501
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.complaint
+  module:
+    - user
+id: node.complaint.teaser
+targetEntityType: node
+bundle: complaint
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

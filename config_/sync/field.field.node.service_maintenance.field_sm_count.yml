@@ -1,0 +1,23 @@
+uuid: 630ce9b6-12f2-4e05-b954-15b6e43bd193
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sm_count
+    - node.type.service_maintenance
+id: node.service_maintenance.field_sm_count
+field_name: field_sm_count
+entity_type: node
+bundle: service_maintenance
+label: Количество
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

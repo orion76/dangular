@@ -1,0 +1,25 @@
+uuid: 43df1436-aa87-4748-9374-749ff8f71904
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - dorion_subtheme
+id: dorion_subtheme_osnovnayanavigaciya_2
+theme: dorion_subtheme
+region: navbar_second
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

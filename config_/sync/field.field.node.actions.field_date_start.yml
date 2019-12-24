@@ -1,0 +1,21 @@
+uuid: 2a7aef30-c7f1-4fcd-8313-9aa84db25442
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_start
+    - node.type.actions
+  module:
+    - datetime
+id: node.actions.field_date_start
+field_name: field_date_start
+entity_type: node
+bundle: actions
+label: 'Дата начала'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

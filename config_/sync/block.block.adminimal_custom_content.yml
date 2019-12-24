@@ -1,0 +1,22 @@
+uuid: 794613ea-be39-49ab-b5b1-dd2160364c19
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adminimal_custom
+_core:
+  default_config_hash: Jo0NeaaawCai6Lb8XoOs0quYSxU6llfIp1rkBi0rkVs
+id: adminimal_custom_content
+theme: adminimal_custom
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

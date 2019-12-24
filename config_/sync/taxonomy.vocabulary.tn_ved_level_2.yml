@@ -1,0 +1,8 @@
+uuid: da31542c-ac0b-46f0-844d-a46b359702fa
+langcode: ru
+status: true
+dependencies: {  }
+name: '(ТН ВЭД) Уровень 2'
+vid: tn_ved_level_2
+description: ''
+weight: 0

@@ -1,0 +1,8 @@
+uuid: c97e61e1-452c-4ea1-a15b-91e5c1cc4a4e
+langcode: ru
+status: true
+dependencies: {  }
+name: '(прайс) Срок'
+vid: price_time
+description: ''
+weight: 0

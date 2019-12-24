@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Contains gpb_layouts.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\gpb_layouts\Plugin\Layout\GpbLayoutWithTabs;
+
+/**
+ * Implements hook_help().
+ */
+function gpb_layouts_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gpb_layouts module.
+    case 'help.page.gpb_layouts':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Layouts collection for Layout Builder') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function gpb_layouts_preprocess_layout(&$variables) {
+  $n = 0;
+
+
+  GpbLayoutWithTabs::process($variables);
+
+
+  $settings = isset($variables['content']['#settings']) ? $variables['content']['#settings'] : [];
+  if (empty($settings)) {
+    return;
+  }
+
+}

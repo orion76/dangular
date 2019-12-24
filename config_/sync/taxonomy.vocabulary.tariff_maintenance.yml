@@ -1,0 +1,8 @@
+uuid: adb38bbb-77f1-4f7e-a8d6-aef06a1eafb6
+langcode: ru
+status: true
+dependencies: {  }
+name: Тариф(обслуживание)
+vid: tariff_maintenance
+description: ''
+weight: 0

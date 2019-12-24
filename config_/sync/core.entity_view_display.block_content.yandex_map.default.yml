@@ -1,0 +1,27 @@
+uuid: 0ee5a80d-7c5b-4427-a96f-ad662a6a8463
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.yandex_map
+    - field.field.block_content.yandex_map.field_map
+  module:
+    - yamaps
+id: block_content.yandex_map.default
+targetEntityType: block_content
+bundle: yandex_map
+mode: default
+content:
+  field_map:
+    weight: 0
+    label: hidden
+    settings:
+      width: 30em
+      height: 20em
+      enable_drag: '1'
+      enable_zoom: '1'
+    third_party_settings: {  }
+    type: yamaps_default
+    region: content
+hidden:
+  langcode: true

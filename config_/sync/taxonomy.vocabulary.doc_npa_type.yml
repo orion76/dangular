@@ -1,0 +1,8 @@
+uuid: 1a3f54a2-dbef-4f64-85ff-492ce7614586
+langcode: ru
+status: true
+dependencies: {  }
+name: '(док) Тип НПА'
+vid: doc_npa_type
+description: ''
+weight: 0

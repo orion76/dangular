@@ -1,0 +1,21 @@
+uuid: fb029bb2-8ad9-4084-ab22-152ff400a861
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Анонимный пользователь'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'create complaint content'
+  - 'create paragraph content user_contacts'
+  - 'create registration content'
+  - 'create review content'
+  - 'update paragraph content user_contacts'
+  - 'use text format restricted_html'
+  - 'view media'
+  - 'view paragraph content price_maintenance'

@@ -1,0 +1,11 @@
+uuid: a990d151-5104-4590-9dde-80b40f73f7ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tariff_register
+id: node.tariff_register
+target_entity_type_id: node
+target_bundle: tariff_register
+default_langcode: site_default
+language_alterable: false

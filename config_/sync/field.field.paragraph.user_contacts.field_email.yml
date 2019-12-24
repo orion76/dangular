@@ -1,0 +1,19 @@
+uuid: b34ce94a-2885-460c-945f-a4dd085d3317
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_email
+    - paragraphs.paragraphs_type.user_contacts
+id: paragraph.user_contacts.field_email
+field_name: field_email
+entity_type: paragraph
+bundle: user_contacts
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

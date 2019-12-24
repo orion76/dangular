@@ -1,0 +1,25 @@
+uuid: 76163b67-d12c-43d7-a204-2db0487713fc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - mercury_radix
+id: podval
+theme: mercury_radix
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Подвал
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

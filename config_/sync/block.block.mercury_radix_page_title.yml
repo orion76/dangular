@@ -1,0 +1,27 @@
+uuid: fc52e3b1-3f09-4afb-82be-4739a1ba6f2b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mercury_radix
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: mercury_radix_page_title
+theme: mercury_radix
+region: header
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

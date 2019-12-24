@@ -1,0 +1,119 @@
+uuid: 91d959e2-abd0-4a2b-8973-ee509ccd5474
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.service_details
+id: paragraph--service_details
+disabled: true
+path: paragraph/service_details
+resourceType: paragraph--service_details
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  revision_id:
+    fieldName: revision_id
+    publicName: revision_id
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  created:
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+    disabled: false
+  parent_id:
+    fieldName: parent_id
+    publicName: parent_id
+    enhancer:
+      id: ''
+    disabled: false
+  parent_type:
+    fieldName: parent_type
+    publicName: parent_type
+    enhancer:
+      id: ''
+    disabled: false
+  parent_field_name:
+    fieldName: parent_field_name
+    publicName: parent_field_name
+    enhancer:
+      id: ''
+    disabled: false
+  behavior_settings:
+    fieldName: behavior_settings
+    publicName: behavior_settings
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+    disabled: false
+  revision_default:
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+    disabled: false
+  revision_translation_affected:
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+    disabled: false
+  field_count:
+    fieldName: field_count
+    publicName: field_count
+    enhancer:
+      id: ''
+    disabled: false
+  field_count_prefix:
+    fieldName: field_count_prefix
+    publicName: field_count_prefix
+    enhancer:
+      id: ''
+    disabled: false
+  field_count_unit:
+    fieldName: field_count_unit
+    publicName: field_count_unit
+    enhancer:
+      id: ''
+    disabled: false
+  field_target:
+    fieldName: field_target
+    publicName: field_target
+    enhancer:
+      id: ''
+    disabled: false

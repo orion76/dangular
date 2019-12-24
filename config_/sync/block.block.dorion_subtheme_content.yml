@@ -1,0 +1,22 @@
+uuid: 0e4394fd-bdd7-4de4-b69f-001f18d889aa
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dorion_subtheme
+_core:
+  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
+id: dorion_subtheme_content
+theme: dorion_subtheme
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  provider: system
+  label_display: '0'
+visibility: {  }

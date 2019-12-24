@@ -1,0 +1,18 @@
+uuid: d85c029f-fb8e-46ab-a81d-64d1feedca46
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.document
+id: node.document.title
+field_name: title
+entity_type: node
+bundle: document
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

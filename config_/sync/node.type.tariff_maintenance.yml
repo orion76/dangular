@@ -1,0 +1,17 @@
+uuid: 79eae08b-625a-43d9-ab83-6d6e0b30c46e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Тариф(обслуживание)
+type: tariff_maintenance
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

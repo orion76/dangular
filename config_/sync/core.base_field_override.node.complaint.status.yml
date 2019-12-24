@@ -1,0 +1,22 @@
+uuid: 3a0a01c9-a502-4187-a77f-7dbbee781a01
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.complaint
+id: node.complaint.status
+field_name: status
+entity_type: node
+bundle: complaint
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

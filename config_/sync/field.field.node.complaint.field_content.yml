@@ -1,0 +1,21 @@
+uuid: da2dd3fe-3a56-4b85-b1a6-922c35903fe0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.complaint
+  module:
+    - text
+id: node.complaint.field_content
+field_name: field_content
+entity_type: node
+bundle: complaint
+label: Содержание
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

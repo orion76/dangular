@@ -1,0 +1,21 @@
+uuid: f72dc77f-59d6-4c1a-bccc-7a15a55cae01
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_end
+    - node.type.actions
+  module:
+    - datetime
+id: node.actions.field_date_end
+field_name: field_date_end
+entity_type: node
+bundle: actions
+label: 'Дата завершения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,8 @@
+uuid: 43b16a84-b8bd-4010-a31a-646e47a385b2
+langcode: ru
+status: true
+dependencies: {  }
+name: Услуга(обслуживание)
+vid: service_maintenance
+description: ''
+weight: 0

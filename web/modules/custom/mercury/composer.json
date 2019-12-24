@@ -1,0 +1,13 @@
+{
+    "name": "mercury",
+    "type": "drupal-module",
+    "description": "Site helper module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/mercury",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/mercury",
+        "source": "http://cgit.drupalcode.org/mercury"
+    }
+}

@@ -1,0 +1,8 @@
+uuid: dedfe567-ea49-4d19-a13e-3a13d92261cf
+langcode: ru
+status: true
+dependencies: {  }
+id: review_comment
+label: 'Review comment'
+target_entity_type_id: node
+description: ''

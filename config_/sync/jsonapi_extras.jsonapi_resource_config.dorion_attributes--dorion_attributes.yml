@@ -1,0 +1,77 @@
+uuid: 8b4901e0-1229-415a-a069-7817c45a6078
+langcode: ru
+status: true
+dependencies:
+  module:
+    - dorion_attributes
+id: dorion_attributes--dorion_attributes
+disabled: false
+path: dorion_attributes/dorion_attributes
+resourceType: dorion_attributes--dorion_attributes
+resourceFields:
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  dependencies:
+    disabled: true
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: true
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: true
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  label:
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+    disabled: false
+  element_type:
+    fieldName: element_type
+    publicName: element_type
+    enhancer:
+      id: ''
+    disabled: false
+  plugin_type:
+    fieldName: plugin_type
+    publicName: plugin_type
+    enhancer:
+      id: ''
+    disabled: false
+  config:
+    fieldName: config
+    publicName: config
+    enhancer:
+      id: ''
+    disabled: false

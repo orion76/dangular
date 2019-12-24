@@ -1,0 +1,13 @@
+{
+    "name": "gpb_layouts",
+    "type": "drupal-module",
+    "description": "Layouts collection for Layout Builder",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/gpb_layouts",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/gpb_layouts",
+        "source": "http://cgit.drupalcode.org/gpb_layouts"
+    }
+}

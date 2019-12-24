@@ -1,0 +1,27 @@
+uuid: 08dfbb9e-68e4-4f40-9b2f-a035b8251eaf
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dorion_subtheme
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: dorion_subtheme_page_title
+theme: dorion_subtheme
+region: header
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

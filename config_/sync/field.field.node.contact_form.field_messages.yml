@@ -1,0 +1,33 @@
+uuid: 7c2c417c-c877-42c3-9df6-64d19779f720
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_messages
+    - node.type.contact_form
+  module:
+    - comment
+id: node.contact_form.field_messages
+field_name: field_messages
+entity_type: node
+bundle: contact_form
+label: Сообщения
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

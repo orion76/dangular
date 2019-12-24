@@ -1,0 +1,20 @@
+uuid: 1ce23eaa-1498-4178-b283-9e2def2c81f0
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - mercury_radix
+_core:
+  default_config_hash: HHryZVJbeKi9WnuBGC8FOhBZmBnk2G1H6KxFuy-rC9A
+id: mercury_radix_local_actions
+theme: mercury_radix
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  provider: core
+  label_display: '0'
+visibility: {  }

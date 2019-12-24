@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_name:entity:name]: [node:field_details:entity:field_count_prefix] [node:field_details:entity:field_count] [node:field_details:entity:field_count_unit]  [node:field_details:entity:field_target]'
+escape: false
+dependencies:
+  config:
+    - node.type.tariff_service

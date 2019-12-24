@@ -1,0 +1,31 @@
+uuid: d2445caf-cfb0-40f5-a085-41e4020a0a5c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service_maintenance.body
+    - node.type.service_maintenance
+  module:
+    - text
+    - user
+id: node.service_maintenance.teaser
+targetEntityType: node
+bundle: service_maintenance
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

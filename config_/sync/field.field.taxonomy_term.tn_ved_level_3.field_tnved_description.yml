@@ -1,0 +1,19 @@
+uuid: c4fe71c9-6032-4b05-b47b-527ff7ebff85
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_tnved_description
+    - taxonomy.vocabulary.tn_ved_level_3
+id: taxonomy_term.tn_ved_level_3.field_tnved_description
+field_name: field_tnved_description
+entity_type: taxonomy_term
+bundle: tn_ved_level_3
+label: Описание
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,21 @@
+uuid: 89ae2f2f-cd2d-4efb-a66e-912d60f77cce
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_date_begin
+    - taxonomy.vocabulary.tn_ved_level_1
+  module:
+    - datetime
+id: taxonomy_term.tn_ved_level_1.field_date_begin
+field_name: field_date_begin
+entity_type: taxonomy_term
+bundle: tn_ved_level_1
+label: 'Дата начала'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,18 @@
+uuid: 0cc2e5b5-3551-46eb-9f24-91565b856aba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tariff_register
+id: node.tariff_register.title
+field_name: title
+entity_type: node
+bundle: tariff_register
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

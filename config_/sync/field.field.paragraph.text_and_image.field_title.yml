@@ -1,0 +1,28 @@
+uuid: 25faaa2d-8090-4def-a8f3-2cc6816b721f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.text_and_image
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: paragraph.text_and_image.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: text_and_image
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

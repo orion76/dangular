@@ -1,0 +1,55 @@
+
+dorion_attributes.config.element.selector:
+  type: mapping
+  mapping:
+    key:
+      type: string
+    value:
+      type: string
+    callback:
+      type: mapping
+      mapping:
+        class:
+          type: string
+        method:
+          type: string
+
+
+dorion_attributes.config.element:
+  type: mapping
+  mapping:
+    name:
+      type: string
+    selector:
+      type: dorion_attributes.config.element.selector
+
+
+dorion_attributes.config:
+  type: mapping
+  mapping:
+     root:
+       type: dorion_attributes.config.element.[%parent.plugin_type]
+     children:
+       type: sequence
+       sequence:
+         type: dorion_attributes.config.element.[%parent.plugin_type]
+
+
+dorion_attributes.entity.*:
+  type: config_entity
+  label: 'Dorion config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    element_type:
+      type: string
+      label: 'DorionElement Plugin ID'
+    plugin_type:
+      type: string
+      label: 'DorionAttributesPlugin ID'
+    config:
+      type: dorion_attributes.config

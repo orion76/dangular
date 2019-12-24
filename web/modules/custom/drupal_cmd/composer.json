@@ -1,0 +1,13 @@
+{
+    "name": "drupal_cmd",
+    "type": "drupal-module",
+    "description": "Drupal comsole custom commands",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/drupal_cmd",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/drupal_cmd",
+        "source": "http://cgit.drupalcode.org/drupal_cmd"
+    }
+}

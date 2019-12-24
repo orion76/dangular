@@ -1,0 +1,11 @@
+uuid: 163dcd71-94ca-4fd3-96f8-f97618d5ca47
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tariff_maintenance
+id: taxonomy_term.tariff_maintenance
+target_entity_type_id: taxonomy_term
+target_bundle: tariff_maintenance
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,35 @@
+uuid: 2ee76f52-3e14-44ed-a5a7-4fae6109a383
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.table_cell
+    - field.field.node.tariff_maintenance.field_tm_price
+    - field.field.node.tariff_maintenance.field_tm_tariff_name
+    - node.type.tariff_maintenance
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.tariff_maintenance.table_cell
+targetEntityType: node
+bundle: tariff_maintenance
+mode: table_cell
+content:
+  field_tm_price:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_tm_tariff_name: true
+  langcode: true
+  links: true

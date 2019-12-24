@@ -1,0 +1,31 @@
+uuid: ca6dd369-e7d0-4c1f-80c8-836129ef0859
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.certificate.field_full_name
+    - taxonomy.vocabulary.certificate
+  module:
+    - text
+id: taxonomy_term.certificate.default
+targetEntityType: taxonomy_term
+bundle: certificate
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_full_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

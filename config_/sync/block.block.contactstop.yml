@@ -1,0 +1,25 @@
+uuid: 08ebfafd-c5c9-4bce-907e-a78d9191ab50
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:67945d0a-6a25-43b9-a341-b4cb6009e72b'
+  module:
+    - block_content
+  theme:
+    - mercury_radix
+id: contactstop
+theme: mercury_radix
+region: navbar_branding
+weight: 0
+provider: null
+plugin: 'block_content:67945d0a-6a25-43b9-a341-b4cb6009e72b'
+settings:
+  id: 'block_content:67945d0a-6a25-43b9-a341-b4cb6009e72b'
+  label: 'Contacts top'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

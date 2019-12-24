@@ -1,0 +1,22 @@
+uuid: fb99249b-f187-42b9-b873-9d4a9905800f
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - mercury_radix
+_core:
+  default_config_hash: QeZBeCilQfeET3GeW6ZtJkEiwROADTZktFgKWwPieD4
+id: mercury_radix_secondary_local_tasks
+theme: mercury_radix
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Вторичные вкладки'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

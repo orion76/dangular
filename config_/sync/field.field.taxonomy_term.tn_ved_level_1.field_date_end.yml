@@ -1,0 +1,21 @@
+uuid: 518a8e9f-bd6e-46ff-a583-16d4304069c9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_date_end
+    - taxonomy.vocabulary.tn_ved_level_1
+  module:
+    - datetime
+id: taxonomy_term.tn_ved_level_1.field_date_end
+field_name: field_date_end
+entity_type: taxonomy_term
+bundle: tn_ved_level_1
+label: 'Дата окончания'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

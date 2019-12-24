@@ -1,0 +1,22 @@
+uuid: a8e6686a-4c1d-4a81-bead-e032c51e9570
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - mercury_radix
+_core:
+  default_config_hash: ddy1OsBbWxjwEI8VL1viD4I69qcLHOkul4BxbTqLBTs
+id: mercury_radix_primary_local_tasks
+theme: mercury_radix
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Главные вкладки'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

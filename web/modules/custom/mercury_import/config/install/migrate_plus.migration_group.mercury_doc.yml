@@ -1,0 +1,11 @@
+id: mercury_doc
+label: Mercury documents imports
+description: Mercury documents imports.
+source_type: CSV file
+shared_configuration:
+  source:
+    key: default
+dependencies:
+  enforced:
+    module:
+      - mercury_import

@@ -1,0 +1,61 @@
+uuid: da4b6917-6e9a-4efd-b133-be163961e946
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.actions.body
+    - field.field.node.actions.field_act_image
+    - field.field.node.actions.field_date_end
+    - field.field.node.actions.field_date_start
+    - node.type.actions
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.actions.default
+targetEntityType: node
+bundle: actions
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_act_image:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_date_end:
+    weight: 103
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_start:
+    weight: 102
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

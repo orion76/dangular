@@ -1,0 +1,25 @@
+uuid: b74f46e5-bc03-4692-810a-7ba72efa6a42
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:67945d0a-6a25-43b9-a341-b4cb6009e72b'
+  module:
+    - block_content
+  theme:
+    - dorion_subtheme
+id: dorion_subtheme_contactstop
+theme: dorion_subtheme
+region: navbar_first
+weight: -6
+provider: null
+plugin: 'block_content:67945d0a-6a25-43b9-a341-b4cb6009e72b'
+settings:
+  id: 'block_content:67945d0a-6a25-43b9-a341-b4cb6009e72b'
+  label: 'Contacts top'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

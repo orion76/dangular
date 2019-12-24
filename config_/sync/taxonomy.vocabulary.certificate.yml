@@ -1,0 +1,8 @@
+uuid: d452fa74-8b7b-4017-988b-42a677c9ecc2
+langcode: ru
+status: true
+dependencies: {  }
+name: Сертификат
+vid: certificate
+description: ''
+weight: 0

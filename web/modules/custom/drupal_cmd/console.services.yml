@@ -1,0 +1,6 @@
+services:
+  drupal_cmd.dc-conf_update:
+    class: Drupal\drupal_cmd\Command\InstallConfigUpdateCommand
+    arguments: ['@console.extension_manager','@console.chain_queue']
+    tags:
+      - { name: drupal.command }

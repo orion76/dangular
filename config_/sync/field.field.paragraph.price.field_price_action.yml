@@ -1,0 +1,23 @@
+uuid: d89563e9-a4ec-458d-b344-c931786deae1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price_action
+    - paragraphs.paragraphs_type.price
+id: paragraph.price.field_price_action
+field_name: field_price_action
+entity_type: paragraph
+bundle: price
+label: Акция
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

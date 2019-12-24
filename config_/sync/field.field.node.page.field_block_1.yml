@@ -1,0 +1,43 @@
+uuid: 02f62f42-77b8-4d5b-9689-95efcab027e2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block_1
+    - node.type.page
+    - paragraphs.paragraphs_type.text_and_image
+  module:
+    - entity_reference_revisions
+id: node.page.field_block_1
+field_name: field_block_1
+entity_type: node
+bundle: page
+label: 'Block 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_and_image: text_and_image
+    target_bundles_drag_drop:
+      price:
+        weight: 6
+        enabled: false
+      price_maintenance:
+        weight: 7
+        enabled: false
+      service_details:
+        weight: 8
+        enabled: false
+      text_and_image:
+        enabled: true
+        weight: 9
+      user_contacts:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

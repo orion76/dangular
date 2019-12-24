@@ -1,0 +1,92 @@
+<?php
+
+/**
+ * @file
+ * Contains dorion_helper.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\dorion_helper\DorionServiceInterface;
+use Drupal\dorion_helper\RenderStack;
+
+/**
+ * Implements hook_help().
+ */
+function dorion_helper_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dorion_helper module.
+    case 'help.page.dorion_helper':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Helper module for theme Dorion') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function dorion_helper_block_alter(&$definitions) {
+  foreach ($definitions as &$definition) {
+    $n = 0;
+  }
+}
+
+/**
+ * Implements hook_element_info_alter().
+ */
+function dorion_helper_element_info_alter(&$type) {
+  //  dorion_stack()->elementInfoAlter($type);
+}
+
+
+/**
+ * Implements hook_preprocess().
+ *
+ * @see contextual_pre_render_placeholder()
+ * @see contextual_page_attachments()
+ * @see \Drupal\contextual\ContextualController::render()
+ */
+function dorion_helper_preprocess(&$variables, $hook, $info) {
+  //  dorion_service()->preprocessElement($hook, $variables, $info);
+}
+
+/**
+ * @return DorionServiceInterface
+ */
+function dorion_service(): DorionServiceInterface {
+  return \Drupal::service('dorion_helper.service');
+}
+
+
+/**
+ * @return \Drupal\dorion_helper\RenderStack
+ */
+function dorion_stack(): RenderStack {
+  return \Drupal::service('dorion_helper.render_stack');
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dorion_helper_theme() {
+  return [
+    'config_field_view' => [
+      'render element' => 'element',
+    ],
+  ];
+}
+
+function template_preprocess_config_field_view(&$variables) {
+  $element = $variables['element'];
+  $variables['attributes'] = new Attribute(['class' => ['field config-field-view']]);
+  $variables['title_attributes'] = new Attribute(['class' => ['field__label']]);
+  $content_attributes = new Attribute(['class' => ['field__content']]);
+  $variables['attributes'] = new Attribute(['class' => ['config-field-view']]);
+  $variables['label'] = $element['#label'];
+  $variables['items'] = array_map(function ($item) use ($content_attributes) {
+    return ['content' => $item, 'attributes' => $content_attributes];
+  }, $element['#items']);
+}
+
+

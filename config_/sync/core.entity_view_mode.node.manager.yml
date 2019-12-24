@@ -1,0 +1,10 @@
+uuid: 8473dbd6-2c1f-4038-9f47-9e81608fcf29
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.manager
+label: Менеджер
+targetEntityType: node
+cache: true

@@ -1,0 +1,17 @@
+uuid: cdd01328-af8e-449e-a44e-006ae89e1425
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Подконтрольная продукция'
+type: controlled_products
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

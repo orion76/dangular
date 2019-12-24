@@ -1,0 +1,7 @@
+name: 'dorion_bem'
+type: module
+description: 'Dorion BEM config'
+core: 8.x
+package: 'dorion'
+dependencies:
+  - dorion_attributes

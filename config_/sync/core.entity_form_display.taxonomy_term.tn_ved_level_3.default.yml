@@ -1,0 +1,95 @@
+uuid: eef0a5f2-4e5d-4b30-8194-d5c9556d961d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tn_ved_level_3.field_code_1
+    - field.field.taxonomy_term.tn_ved_level_3.field_code_2
+    - field.field.taxonomy_term.tn_ved_level_3.field_code_3
+    - field.field.taxonomy_term.tn_ved_level_3.field_date_begin
+    - field.field.taxonomy_term.tn_ved_level_3.field_date_end
+    - field.field.taxonomy_term.tn_ved_level_3.field_tnved_description
+    - taxonomy.vocabulary.tn_ved_level_3
+  module:
+    - datetime
+    - path
+    - text
+id: taxonomy_term.tn_ved_level_3.default
+targetEntityType: taxonomy_term
+bundle: tn_ved_level_3
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_code_1:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_code_2:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_code_3:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_date_begin:
+    weight: 35
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_end:
+    weight: 36
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_tnved_description:
+    weight: 31
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

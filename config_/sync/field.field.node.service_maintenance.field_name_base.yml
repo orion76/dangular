@@ -1,0 +1,29 @@
+uuid: 3d83fee1-4f67-4a29-a57b-6cef6a499f35
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_base
+    - node.type.service_maintenance
+    - taxonomy.vocabulary.service_maintenance
+id: node.service_maintenance.field_name_base
+field_name: field_name_base
+entity_type: node
+bundle: service_maintenance
+label: Наименование
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      service_maintenance: service_maintenance
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

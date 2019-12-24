@@ -1,0 +1,19 @@
+uuid: 00fb73c2-0570-4d63-92a7-e408bf0edba0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_full_name
+    - taxonomy.vocabulary.certificate
+id: taxonomy_term.certificate.field_full_name
+field_name: field_full_name
+entity_type: taxonomy_term
+bundle: certificate
+label: 'Полное наименование'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

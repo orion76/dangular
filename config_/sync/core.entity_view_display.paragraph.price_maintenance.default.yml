@@ -1,0 +1,36 @@
+uuid: f699568e-3c66-40c4-b99b-143199988101
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.price_maintenance.field_price
+    - field.field.paragraph.price_maintenance.field_price_action
+    - paragraphs.paragraphs_type.price_maintenance
+id: paragraph.price_maintenance.default
+targetEntityType: paragraph
+bundle: price_maintenance
+mode: default
+content:
+  field_price:
+    weight: 0
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_price_action:
+    weight: 1
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden: {  }

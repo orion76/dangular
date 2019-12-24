@@ -1,0 +1,22 @@
+uuid: e6a63803-5031-4407-8fdb-2ea924dc0437
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.review
+id: node.review.status
+field_name: status
+entity_type: node
+bundle: review
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

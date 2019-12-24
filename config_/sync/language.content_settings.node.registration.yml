@@ -1,0 +1,11 @@
+uuid: 7af4b755-f78a-4853-bd25-1c90c21b300b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.registration
+id: node.registration
+target_entity_type_id: node
+target_bundle: registration
+default_langcode: site_default
+language_alterable: false

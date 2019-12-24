@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_tm_tariff_name:entity:name]'
+escape: false
+dependencies:
+  config:
+    - node.type.tariff_maintenance

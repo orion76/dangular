@@ -1,0 +1,6 @@
+status: 2
+pattern: '[node:field_price:entity:field_count_unit]'
+escape: false
+dependencies:
+  config:
+    - node.type.tariff_register

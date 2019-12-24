@@ -1,0 +1,23 @@
+uuid: cb854929-cfd6-4492-a6b0-130c86d47ac5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_count_prefix
+    - paragraphs.paragraphs_type.service_details
+  module:
+    - options
+id: paragraph.service_details.field_count_prefix
+field_name: field_count_prefix
+entity_type: paragraph
+bundle: service_details
+label: 'Префикс количества'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: to
+default_value_callback: ''
+settings: {  }
+field_type: list_string

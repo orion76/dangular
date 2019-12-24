@@ -1,0 +1,13 @@
+{
+    "name": "dorion_attributes",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/dorion_attributes",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/dorion_attributes",
+        "source": "http://cgit.drupalcode.org/dorion_attributes"
+    }
+}

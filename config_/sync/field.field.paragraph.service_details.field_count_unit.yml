@@ -1,0 +1,23 @@
+uuid: b9d63e04-f1cb-40d2-8d7d-8301932e7720
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_count_unit
+    - paragraphs.paragraphs_type.service_details
+  module:
+    - options
+id: paragraph.service_details.field_count_unit
+field_name: field_count_unit
+entity_type: paragraph
+bundle: service_details
+label: Ед.изм
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: evsd
+default_value_callback: ''
+settings: {  }
+field_type: list_string

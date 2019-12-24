@@ -1,0 +1,21 @@
+uuid: ebcdd9ab-a3bc-4d9f-accd-472bc2c6bd85
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.review
+  module:
+    - text
+id: node.review.field_content
+field_name: field_content
+entity_type: node
+bundle: review
+label: Отзыв
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

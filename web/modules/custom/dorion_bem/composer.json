@@ -1,0 +1,13 @@
+{
+    "name": "dorion_bem",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/dorion_bem",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/dorion_bem",
+        "source": "http://cgit.drupalcode.org/dorion_bem"
+    }
+}

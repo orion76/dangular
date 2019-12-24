@@ -1,0 +1,21 @@
+uuid: b9426309-0759-4b88-91d4-1f640bce49e9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_code_2
+field_name: field_code_2
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 8
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

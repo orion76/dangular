@@ -1,0 +1,35 @@
+uuid: 49516d45-eb88-4df9-a2ae-e75ef61ffa78
+langcode: ru
+status: true
+dependencies:
+  module:
+    - dimport_config
+id: dimport_bundle--dimport_bundle
+disabled: true
+path: dimport_bundle/dimport_bundle
+resourceType: dimport_bundle--dimport_bundle
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false

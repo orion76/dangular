@@ -1,0 +1,20 @@
+uuid: a49f7a63-7857-4bb0-9509-4415c4c352f9
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - adminimal_custom
+_core:
+  default_config_hash: VECkFWsF9AokGHLPsWnxARfPSooUyq5M0mp9P2yQzYw
+id: adminimal_custom_local_actions
+theme: adminimal_custom
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

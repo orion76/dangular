@@ -1,0 +1,22 @@
+uuid: 836ee11d-e5c6-4b47-a57d-2ed94e12fc3c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.registration
+id: node.registration.status
+field_name: status
+entity_type: node
+bundle: registration
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

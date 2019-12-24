@@ -1,0 +1,22 @@
+uuid: bab8c14f-e2ec-4c46-9beb-24b5fd9e75fd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.actions
+  module:
+    - text
+id: node.actions.body
+field_name: body
+entity_type: node
+bundle: actions
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

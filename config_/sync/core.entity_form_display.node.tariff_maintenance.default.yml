@@ -1,0 +1,55 @@
+uuid: 1801f3f4-2301-4fb8-aa98-2d2a67b99f76
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.tariff_maintenance.field_tm_price
+    - field.field.node.tariff_maintenance.field_tm_tariff_name
+    - node.type.tariff_maintenance
+  module:
+    - paragraphs
+id: node.tariff_maintenance.default
+targetEntityType: node
+bundle: tariff_maintenance
+mode: default
+content:
+  field_tm_price:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Параграф
+      title_plural: Параграфы
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_tm_tariff_name:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 1
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

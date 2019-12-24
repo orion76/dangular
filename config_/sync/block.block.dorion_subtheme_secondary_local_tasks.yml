@@ -1,0 +1,22 @@
+uuid: 4d5e0ddd-e379-4291-a26d-672ba2222583
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - dorion_subtheme
+_core:
+  default_config_hash: QeZBeCilQfeET3GeW6ZtJkEiwROADTZktFgKWwPieD4
+id: dorion_subtheme_secondary_local_tasks
+theme: dorion_subtheme
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Вторичные вкладки'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

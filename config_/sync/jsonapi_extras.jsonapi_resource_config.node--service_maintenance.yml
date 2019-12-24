@@ -1,0 +1,197 @@
+uuid: a981e493-1bb7-4de1-971a-f0cd75a45e72
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.service_maintenance
+id: node--service_maintenance
+disabled: true
+path: node/service_maintenance
+resourceType: node--service_maintenance
+resourceFields:
+  nid:
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  vid:
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  revision_timestamp:
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+    disabled: false
+  revision_uid:
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+    disabled: false
+  revision_log:
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  uid:
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+    disabled: false
+  title:
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+    disabled: false
+  created:
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+    disabled: false
+  changed:
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+    disabled: false
+  promote:
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+    disabled: false
+  sticky:
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+    disabled: false
+  revision_default:
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+    disabled: false
+  revision_translation_affected:
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+    disabled: false
+  path:
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+    disabled: false
+  menu_link:
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+    disabled: false
+  body:
+    fieldName: body
+    publicName: body
+    enhancer:
+      id: ''
+    disabled: false
+  field_certificate:
+    fieldName: field_certificate
+    publicName: field_certificate
+    enhancer:
+      id: ''
+    disabled: false
+  field_name_base:
+    fieldName: field_name_base
+    publicName: field_name_base
+    enhancer:
+      id: ''
+    disabled: false
+  field_sm_count:
+    fieldName: field_sm_count
+    publicName: field_sm_count
+    enhancer:
+      id: ''
+    disabled: false
+  field_sm_prefix:
+    fieldName: field_sm_prefix
+    publicName: field_sm_prefix
+    enhancer:
+      id: ''
+    disabled: false
+  field_sm_type_activity:
+    fieldName: field_sm_type_activity
+    publicName: field_sm_type_activity
+    enhancer:
+      id: ''
+    disabled: false
+  field_tariff_a:
+    fieldName: field_tariff_a
+    publicName: field_tariff_a
+    enhancer:
+      id: ''
+    disabled: false
+  field_tariff_b:
+    fieldName: field_tariff_b
+    publicName: field_tariff_b
+    enhancer:
+      id: ''
+    disabled: false
+  field_tariff_c:
+    fieldName: field_tariff_c
+    publicName: field_tariff_c
+    enhancer:
+      id: ''
+    disabled: false
+  field_tariff_d:
+    fieldName: field_tariff_d
+    publicName: field_tariff_d
+    enhancer:
+      id: ''
+    disabled: false
+  field_tariff_e:
+    fieldName: field_tariff_e
+    publicName: field_tariff_e
+    enhancer:
+      id: ''
+    disabled: false

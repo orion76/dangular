@@ -1,0 +1,19 @@
+uuid: 853d62f8-281f-40ba-a83b-c640b9bd874c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sm_prefix
+    - node.type.service_maintenance
+id: node.service_maintenance.field_sm_prefix
+field_name: field_sm_prefix
+entity_type: node
+bundle: service_maintenance
+label: Префикс
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

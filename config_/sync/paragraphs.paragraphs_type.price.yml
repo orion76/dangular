@@ -1,0 +1,9 @@
+uuid: 3c955cb3-c0e4-4b7d-a2b7-76d2ebf94cf2
+langcode: ru
+status: true
+dependencies: {  }
+id: price
+label: Price
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

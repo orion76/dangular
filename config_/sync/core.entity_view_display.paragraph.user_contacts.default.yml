@@ -1,0 +1,28 @@
+uuid: 69f593a4-2a9e-4638-a112-1d739b35e611
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.user_contacts.field_email
+    - field.field.paragraph.user_contacts.field_phone_number
+    - paragraphs.paragraphs_type.user_contacts
+id: paragraph.user_contacts.default
+targetEntityType: paragraph
+bundle: user_contacts
+mode: default
+content:
+  field_email:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_phone_number:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: 325c1418-5843-43eb-a82a-c2af2bc71ee6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.tariff_register
+    - paragraphs.paragraphs_type.price
+  module:
+    - entity_reference_revisions
+id: node.tariff_register.field_price
+field_name: field_price
+entity_type: node
+bundle: tariff_register
+label: Цена
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      price: price
+    target_bundles_drag_drop:
+      price:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

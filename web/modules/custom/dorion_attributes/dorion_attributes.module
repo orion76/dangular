@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains dorion_attributes.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dorion_attributes_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dorion_attributes module.
+    case 'help.page.dorion_attributes':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dorion_attributes_theme() {
+  return [
+    'dorion_attributes' => [
+      'render element' => 'children',
+    ],
+  ];
+}

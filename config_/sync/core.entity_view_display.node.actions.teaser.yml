@@ -1,0 +1,181 @@
+uuid: 6ac31011-1193-4f0e-801a-916b051c28c1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.actions.title
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actions.body
+    - field.field.node.actions.field_act_image
+    - field.field.node.actions.field_date_end
+    - field.field.node.actions.field_date_start
+    - node.type.actions
+  module:
+    - datetime
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 33-67
+        components:
+          16639c13-c18f-482d-bfac-730b2a9dfa7b:
+            uuid: 16639c13-c18f-482d-bfac-730b2a9dfa7b
+            region: first
+            configuration:
+              id: 'field_block:node:actions:field_act_image'
+              label: Изображение
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: large
+                  image_link: content
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          f3432c45-2a9b-4feb-899d-43f1807e9277:
+            uuid: f3432c45-2a9b-4feb-899d-43f1807e9277
+            region: second
+            configuration:
+              id: 'field_block:node:actions:field_date_start'
+              label: 'Дата начала'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: datetime_default
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          a7c66e62-8951-49bd-af1e-9d82ad187a35:
+            uuid: a7c66e62-8951-49bd-af1e-9d82ad187a35
+            region: second
+            configuration:
+              id: 'field_block:node:actions:field_date_end'
+              label: 'Дата завершения'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: datetime_default
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          8cb32dda-9a8c-46f7-a829-417920effba6:
+            uuid: 8cb32dda-9a8c-46f7-a829-417920effba6
+            region: second
+            configuration:
+              id: 'field_block:node:actions:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+          c0efc7c5-c834-4e68-9db8-bccfab78cf69:
+            uuid: c0efc7c5-c834-4e68-9db8-bccfab78cf69
+            region: second
+            configuration:
+              id: 'extra_field_block:node:actions:links'
+              label: Ссылки
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 4
+          a0b3c995-c677-4984-b1ab-8cfdd195f2bb:
+            uuid: a0b3c995-c677-4984-b1ab-8cfdd195f2bb
+            region: second
+            configuration:
+              id: 'field_block:node:actions:title'
+              label: Наименование
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: node.actions.teaser
+targetEntityType: node
+bundle: actions
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_act_image:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_date_end:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_date_start:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

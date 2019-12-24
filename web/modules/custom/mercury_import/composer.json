@@ -1,0 +1,13 @@
+{
+    "name": "mercury_import",
+    "type": "drupal-module",
+    "description": "Site import content",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/mercury_import",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/mercury_import",
+        "source": "http://cgit.drupalcode.org/mercury_import"
+    }
+}

@@ -1,0 +1,20 @@
+uuid: da2258d6-e0bb-4ad2-ba80-14eb5baf4530
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - radix
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: radix_page_title
+theme: radix
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  provider: core
+  label_display: '0'
+visibility: {  }

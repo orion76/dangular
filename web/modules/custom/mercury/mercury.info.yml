@@ -1,0 +1,5 @@
+name: 'mercury'
+type: module
+description: 'Site helper module'
+core: 8.x
+package: 'mercury'

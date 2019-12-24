@@ -1,0 +1,8 @@
+uuid: cbfbc9e6-1e8a-4fff-8f93-f106d26e330b
+langcode: ru
+status: true
+dependencies: {  }
+id: test
+label: test
+import_plugins: null
+queue_config: null

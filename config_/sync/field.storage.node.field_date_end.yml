@@ -1,0 +1,20 @@
+uuid: a5ff4e57-ce42-42dd-83e7-dbe186a5c947
+langcode: ru
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_date_end
+field_name: field_date_end
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

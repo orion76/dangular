@@ -1,0 +1,23 @@
+uuid: 36feab8e-6b22-4be9-89d7-dce33fc0a1a2
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dorion_subtheme
+id: dorion_subtheme_sitebranding
+theme: dorion_subtheme
+region: navbar_first
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

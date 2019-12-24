@@ -1,0 +1,33 @@
+uuid: 228e6e4e-e648-4edf-9391-931f7ffc20a9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comment
+    - node.type.review
+  module:
+    - comment
+id: node.review.field_comment
+field_name: field_comment
+entity_type: node
+bundle: review
+label: Ответ
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 0
+  per_page: 50
+  anonymous: 0
+  form_location: false
+  preview: 1
+field_type: comment

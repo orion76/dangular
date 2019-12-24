@@ -1,0 +1,83 @@
+uuid: 30ec4972-bb03-4c9d-81d8-c206be9fe2ec
+langcode: ru
+status: true
+dependencies:
+  module:
+    - dorion_element
+id: dorion_element--dorion_element
+disabled: false
+path: dorion_element/dorion_element
+resourceType: dorion_element--dorion_element
+resourceFields:
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  dependencies:
+    disabled: true
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+  third_party_settings:
+    disabled: true
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+  _core:
+    disabled: true
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  label:
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+    disabled: false
+  element_type:
+    fieldName: element_type
+    publicName: element_type
+    enhancer:
+      id: ''
+    disabled: false
+  children:
+    fieldName: children
+    publicName: children
+    enhancer:
+      id: ''
+    disabled: false
+  context:
+    fieldName: context
+    publicName: context
+    enhancer:
+      id: ''
+    disabled: false
+  attributes:
+    fieldName: attributes
+    publicName: attributes
+    enhancer:
+      id: ''
+    disabled: false

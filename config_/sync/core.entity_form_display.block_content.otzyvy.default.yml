@@ -1,0 +1,47 @@
+uuid: 08bdbe66-07ad-46be-b0c3-828549aad08e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.otzyvy
+    - field.field.block_content.otzyvy.body
+    - field.field.block_content.otzyvy.field_review
+  module:
+    - comment
+    - text
+id: block_content.otzyvy.default
+targetEntityType: block_content
+bundle: otzyvy
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_review:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

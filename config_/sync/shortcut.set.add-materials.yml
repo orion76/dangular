@@ -1,0 +1,6 @@
+uuid: f24ded02-a897-45f0-a4cb-8406db1f9780
+langcode: ru
+status: true
+dependencies: {  }
+id: add-materials
+label: 'Добавить материалы'

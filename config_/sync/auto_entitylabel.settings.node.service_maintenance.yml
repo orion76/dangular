@@ -1,0 +1,6 @@
+status: 1
+pattern: ' [node:field_name_base:entity:name] ([node:field_sm_prefix:value] [node:field_sm_count:value] [node:field_certificate:entity:name] [node:field_sm_target:entity:name] )'
+escape: false
+dependencies:
+  config:
+    - node.type.service_maintenance

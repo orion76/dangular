@@ -1,0 +1,30 @@
+uuid: 6f935d6e-7d48-49bb-97f4-70d0bab6b893
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.type-activity
+  module:
+    - system
+  theme:
+    - dorion
+id: dorion_tipydeytelnosti
+theme: dorion
+region: content
+weight: -3
+provider: null
+plugin: 'system_menu_block:type-activity'
+settings:
+  id: 'system_menu_block:type-activity'
+  label: 'Типы деятельности'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/services-maintenance\r\n/services-maintenance/*"
+    negate: false
+    context_mapping: {  }

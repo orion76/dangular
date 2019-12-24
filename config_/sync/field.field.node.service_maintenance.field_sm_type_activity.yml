@@ -1,0 +1,29 @@
+uuid: f982011c-cae1-4483-9324-ad71e8aa3dec
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sm_type_activity
+    - node.type.service_maintenance
+    - taxonomy.vocabulary.type_activity
+id: node.service_maintenance.field_sm_type_activity
+field_name: field_sm_type_activity
+entity_type: node
+bundle: service_maintenance
+label: 'Типы деятельности предприятий'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_activity: type_activity
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

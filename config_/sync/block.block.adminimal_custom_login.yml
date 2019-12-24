@@ -1,0 +1,22 @@
+uuid: 92db3004-2440-4ac6-8285-b37a03ab2d6e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - adminimal_custom
+_core:
+  default_config_hash: SrNiCW8CMRnnAO5ZMmL8SA5rtyrWJj1ukJ2k-d_4OqM
+id: adminimal_custom_login
+theme: adminimal_custom
+region: content
+weight: 10
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

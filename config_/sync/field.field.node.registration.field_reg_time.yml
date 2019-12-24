@@ -1,0 +1,23 @@
+uuid: b9f4a8d2-5c79-479a-8600-e5bb39ab9dd8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reg_time
+    - node.type.registration
+  module:
+    - options
+id: node.registration.field_reg_time
+field_name: field_reg_time
+entity_type: node
+bundle: registration
+label: Срок
+description: 'Срок регистрации'
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

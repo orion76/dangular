@@ -1,0 +1,48 @@
+uuid: 1e8a2cf6-777f-4086-9926-316770d1a7c4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_details.field_count
+    - field.field.paragraph.service_details.field_count_prefix
+    - field.field.paragraph.service_details.field_count_unit
+    - field.field.paragraph.service_details.field_target
+    - paragraphs.paragraphs_type.service_details
+  module:
+    - options
+id: paragraph.service_details.default
+targetEntityType: paragraph
+bundle: service_details
+mode: default
+content:
+  field_count:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_count_prefix:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_count_unit:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_target:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

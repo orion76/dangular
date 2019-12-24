@@ -1,0 +1,6 @@
+name: 'dorion_helper'
+type: module
+description: 'Helper module for theme Dorion'
+core: 8.x
+package: 'dorion'
+

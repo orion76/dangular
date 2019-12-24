@@ -1,0 +1,20 @@
+uuid: 5f25e3b8-c5d3-4c03-8e4e-da75500e4f1a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_sm_type_activity
+field_name: field_sm_type_activity
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

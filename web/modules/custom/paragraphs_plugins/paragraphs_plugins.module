@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains paragraphs_plugins.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function paragraphs_plugins_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the paragraphs_plugins module.
+    case 'help.page.paragraphs_plugins':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Paragraphs behavior plugins') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function paragraphs_plugins_theme_suggestions_paragraph_alter(&$suggestions, array $variables) {
+  /** @var $paragraph \Drupal\paragraphs\Entity\Paragraph */
+  $paragraph = $variables['elements']['#paragraph'];
+  if ($settings = $paragraph->getBehaviorSetting('paragraph_title', 'title_field', FALSE)) {
+    $suggestions[] = 'paragraph__with_title';
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function paragraphs_plugins_theme() {
+  return [
+    'paragraph__with_title' => [
+      'template' => 'paragraph--with-title',
+      'base hook' => 'paragraph'
+    ]
+  ];
+}

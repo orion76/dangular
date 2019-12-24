@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains gpb_form_elements.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function gpb_form_elements_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gpb_form_elements module.
+    case 'help.page.gpb_form_elements':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom form elements collection') . '</p>';
+      return $output;
+
+    default:
+  }
+}

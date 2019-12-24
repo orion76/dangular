@@ -1,0 +1,22 @@
+uuid: 92108f7c-72f1-4dc7-a0af-a7720ab9ad76
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adminimal_custom
+_core:
+  default_config_hash: 1OzjpqHR22T6BNwAyG7pOL5Sc5xpKR6O5EcJzcPttdg
+id: adminimal_custom_messages
+theme: adminimal_custom
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

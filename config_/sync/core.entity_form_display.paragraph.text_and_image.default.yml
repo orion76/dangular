@@ -1,0 +1,45 @@
+uuid: 8389bf83-7025-476b-9f22-917db8eed854
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_and_image.field_image
+    - field.field.paragraph.text_and_image.field_text
+    - field.field.paragraph.text_and_image.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.text_and_image
+  module:
+    - image
+    - text
+id: paragraph.text_and_image.default
+targetEntityType: paragraph
+bundle: text_and_image
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

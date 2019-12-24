@@ -1,0 +1,9 @@
+services:
+
+  dorion_helper.service:
+    class: Drupal\dorion_helper\DorionService
+    arguments: ['@event_dispatcher']
+  dorion_helper.render_stack:
+    class: Drupal\dorion_helper\RenderStack
+    arguments: ['@dorion_helper.service']
+

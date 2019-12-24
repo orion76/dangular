@@ -1,0 +1,20 @@
+uuid: 96c96c5c-6944-4698-97ad-1b090cea4e8b
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - dorion
+_core:
+  default_config_hash: HHryZVJbeKi9WnuBGC8FOhBZmBnk2G1H6KxFuy-rC9A
+id: dorion_local_actions
+theme: dorion
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основные действия администратора'
+  provider: core
+  label_display: '0'
+visibility: {  }

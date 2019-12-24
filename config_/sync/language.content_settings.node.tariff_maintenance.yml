@@ -1,0 +1,11 @@
+uuid: 5bc7c8d9-ebff-495e-8b6a-e72dd366d3dd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tariff_maintenance
+id: node.tariff_maintenance
+target_entity_type_id: node
+target_bundle: tariff_maintenance
+default_langcode: site_default
+language_alterable: false

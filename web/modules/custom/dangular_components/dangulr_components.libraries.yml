@@ -1,0 +1,6 @@
+dangular_components:
+  license:
+    name: MIT
+    gpl-compatible: false
+  js:
+    /libraries/dangular_components/dist/dangular_components.js: { }

@@ -1,0 +1,19 @@
+uuid: 1eb2d4a3-f8bb-46bc-83ae-99d7db453ac1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_code_3
+    - taxonomy.vocabulary.tn_ved_level_3
+id: taxonomy_term.tn_ved_level_3.field_code_3
+field_name: field_code_3
+entity_type: taxonomy_term
+bundle: tn_ved_level_3
+label: 'Код 3'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: ba01d77b-a0b9-4e59-9b9f-f15688c391fa
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Типы деятельности предприятий'
+vid: type_activity
+description: ''
+weight: 0

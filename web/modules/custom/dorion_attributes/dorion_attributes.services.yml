@@ -1,0 +1,6 @@
+services:
+
+  plugin.manager.dorion_attributes:
+    class: Drupal\dorion_attributes\DorionAttributesPluginManager
+    parent: default_plugin_manager
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler','@plugin.manager.dorion_element']

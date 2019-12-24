@@ -1,0 +1,9 @@
+uuid: 5f3765b9-8853-4928-931c-aacae93ff355
+langcode: ru
+status: true
+dependencies: {  }
+id: user_contacts
+label: 'User contacts'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

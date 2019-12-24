@@ -1,0 +1,20 @@
+uuid: b7e3ad19-949f-4c78-9cef-10da0fc75386
+langcode: ru
+status: true
+dependencies:
+  module:
+    - block_content
+    - comment
+id: block_content.field_review
+field_name: field_review
+entity_type: block_content
+type: comment
+settings:
+  comment_type: ''
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

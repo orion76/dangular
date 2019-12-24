@@ -1,0 +1,25 @@
+services:
+#  dorion_helper.twig_extension:
+#    class: Drupal\dorion_helper\Twig\DorionTwigExtension
+#    tags:
+#      - { name: twig.extension }
+#
+#  plugin.manager.theme_preprocess_plugin:
+#    class: Drupal\dorion_helper\Plugin\ThemePreprocessPluginManager
+#    parent: default_plugin_manager
+#  dorion_helper.bem:
+#    class: Drupal\dorion_helper\Bem\ServiceBem
+#    arguments: ['@plugin.manager.theme_preprocess_plugin']
+#
+#  dorion_helper.bem_config.repository:
+#    class: Drupal\dorion_helper\DorionAttributesRepository
+#    arguments: ['@entity_type.manager']
+#
+#  dorion_helper.bem_config:
+#    class: Drupal\dorion_helper\Bem\ServiceBemConfig
+#    arguments: ['@dorion_helper.bem_config.repository','@dorion_helper.bem','@context.repository','@entity_type.manager']
+#  dorion_helper.event_subscriber__kernel_view:
+#    class: Drupal\dorion_helper\EventSubscriber\EventSubscriberKernelView
+#    arguments: ['@dorion_helper.bem']
+#    tags:
+#      - { name: event_subscriber }

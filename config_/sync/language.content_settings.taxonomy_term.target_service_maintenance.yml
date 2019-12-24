@@ -1,0 +1,11 @@
+uuid: 299506f7-fbe8-43fe-9828-85a55b8dba57
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.target_service_maintenance
+id: taxonomy_term.target_service_maintenance
+target_entity_type_id: taxonomy_term
+target_bundle: target_service_maintenance
+default_langcode: site_default
+language_alterable: false

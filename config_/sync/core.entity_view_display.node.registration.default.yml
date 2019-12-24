@@ -1,0 +1,40 @@
+uuid: cfae5b2f-2c1b-4fc6-a315-57f03f0cd64d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.registration.field_contacts
+    - field.field.node.registration.field_reg_time
+    - node.type.registration
+  module:
+    - entity_reference_revisions
+    - options
+    - user
+id: node.registration.default
+targetEntityType: node
+bundle: registration
+mode: default
+content:
+  field_contacts:
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_reg_time:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

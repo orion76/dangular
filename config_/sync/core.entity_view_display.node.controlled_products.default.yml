@@ -1,0 +1,29 @@
+uuid: 5d6e6510-2aab-4147-917a-d76fc3e8e360
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.controlled_products.body
+    - node.type.controlled_products
+  module:
+    - text
+    - user
+id: node.controlled_products.default
+targetEntityType: node
+bundle: controlled_products
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

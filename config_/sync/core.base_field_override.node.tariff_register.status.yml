@@ -1,0 +1,22 @@
+uuid: e633f43c-e44a-4a52-b831-6827852c59c4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tariff_register
+id: node.tariff_register.status
+field_name: status
+entity_type: node
+bundle: tariff_register
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

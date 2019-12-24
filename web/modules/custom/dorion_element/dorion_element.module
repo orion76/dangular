@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Contains dorion_element.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\dorion_helper\DorionServiceInterface;
+use Drupal\dorion_helper\RenderStack;
+
+/**
+ * Implements hook_help().
+ */
+function dorion_element_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dorion_element module.
+    case 'help.page.dorion_element':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function dorion_element_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\dorion_element\Plugin\DorionElementTypeInterface $plugin */
+  $form += ['#after_build' => []];
+  $form['#after_build'][] = 'dorion_element_form_after_build';
+}
+
+function dorion_element_form_after_build(array $element, FormStateInterface $form_state) {
+
+  dorion_stack()->addRecursive($element);
+  //  dorion_service()->prepareElement('form', $element);
+  //  dorion_service()->prepareElement('form_element', $element);
+  return $element;
+}
+
+function dorion_element_element_info_alter(array &$info) {
+
+  $n = 0;
+}
+
+/**
+ * @return \Drupal\dorion_element\Plugin\DorionElementPluginManager
+ */
+function dorion_element_plugin_manager() {
+  return Drupal::service('plugin.manager.dorion_element');
+}

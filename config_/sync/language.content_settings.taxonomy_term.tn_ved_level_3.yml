@@ -1,0 +1,11 @@
+uuid: 87b4e75c-8e01-4360-8d52-102773fbc696
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tn_ved_level_3
+id: taxonomy_term.tn_ved_level_3
+target_entity_type_id: taxonomy_term
+target_bundle: tn_ved_level_3
+default_langcode: site_default
+language_alterable: false

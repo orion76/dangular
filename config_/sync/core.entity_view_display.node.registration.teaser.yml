@@ -1,0 +1,21 @@
+uuid: 17e161bd-fffb-448f-92dd-68c5d20455d7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.registration
+  module:
+    - user
+id: node.registration.teaser
+targetEntityType: node
+bundle: registration
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

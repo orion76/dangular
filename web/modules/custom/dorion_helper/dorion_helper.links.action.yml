@@ -1,0 +1,5 @@
+#entity.dorion_attributes.add_form:
+#  route_name: entity.dorion_attributes.add_form
+#  title: 'Add Dorion config'
+#  appears_on:
+#    - entity.dorion_attributes.collection

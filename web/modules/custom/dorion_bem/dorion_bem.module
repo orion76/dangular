@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains dorion_bem.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\dorion_bem\DorionServiceInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dorion_bem_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dorion_bem module.
+    case 'help.page.dorion_bem':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * @return DorionServiceInterface
+ */
+function bem_service(): DorionServiceInterface {
+  return \Drupal::service('dorion_helper.bem');
+}

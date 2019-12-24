@@ -1,0 +1,60 @@
+uuid: f38e6bcd-a8aa-4498-8b4a-0f36b1bbed83
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tariff_maintenance.field_tm_price
+    - field.field.node.tariff_maintenance.field_tm_tariff_name
+    - node.type.tariff_maintenance
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          d66f87be-b3fa-4168-8f71-e3d6b498ccbe:
+            uuid: d66f87be-b3fa-4168-8f71-e3d6b498ccbe
+            region: content
+            configuration:
+              id: 'field_block:node:tariff_maintenance:field_tm_price'
+              label: Цена
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: preview
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: node.tariff_maintenance.teaser
+targetEntityType: node
+bundle: tariff_maintenance
+mode: teaser
+content:
+  field_tm_price:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  field_tm_tariff_name: true
+  langcode: true
+  links: true

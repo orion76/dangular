@@ -1,0 +1,5 @@
+name: 'dangular_components'
+type: module
+description: 'Angular 2+ web-components for Drupal 8'
+core: 8.x
+package: 'dangular'

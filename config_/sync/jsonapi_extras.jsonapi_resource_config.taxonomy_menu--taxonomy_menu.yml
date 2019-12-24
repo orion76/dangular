@@ -1,0 +1,35 @@
+uuid: 9f4b40bd-5d47-4cc5-a682-3ff89eb26f32
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy_menu
+id: taxonomy_menu--taxonomy_menu
+disabled: true
+path: taxonomy_menu/taxonomy_menu
+resourceType: taxonomy_menu--taxonomy_menu
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false

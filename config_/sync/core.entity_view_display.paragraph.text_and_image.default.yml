@@ -1,0 +1,51 @@
+uuid: 836eda19-34ef-481b-8610-c7536eb65427
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_and_image.field_image
+    - field.field.paragraph.text_and_image.field_text
+    - field.field.paragraph.text_and_image.field_title
+    - field.field.paragraph.text_and_image.layout_builder__layout
+    - image.style.large
+    - paragraphs.paragraphs_type.text_and_image
+  module:
+    - gpb_layouts
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.text_and_image.default
+targetEntityType: paragraph
+bundle: text_and_image
+mode: default
+content:
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  layout_builder__layout: true

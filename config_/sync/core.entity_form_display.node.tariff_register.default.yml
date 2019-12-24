@@ -1,0 +1,80 @@
+uuid: 87b48376-5011-4ae8-a026-ac50f6c7aa3c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.tariff_register.body
+    - field.field.node.tariff_register.field_price
+    - field.field.node.tariff_register.field_register_time
+    - node.type.tariff_register
+  module:
+    - paragraphs
+    - path
+    - text
+id: node.tariff_register.default
+targetEntityType: node
+bundle: tariff_register
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 5
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_price:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Параграф
+      title_plural: Параграфы
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_register_time:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  sticky: true
+  uid: true

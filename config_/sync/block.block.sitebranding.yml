@@ -1,0 +1,23 @@
+uuid: 4e47ee65-ff17-40ca-b209-2b50c11fddeb
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mercury_radix
+id: sitebranding
+theme: mercury_radix
+region: navbar_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

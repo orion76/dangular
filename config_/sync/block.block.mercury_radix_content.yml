@@ -1,0 +1,22 @@
+uuid: 2f924727-e207-469f-85d3-106f68992d16
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mercury_radix
+_core:
+  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
+id: mercury_radix_content
+theme: mercury_radix
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  provider: system
+  label_display: '0'
+visibility: {  }

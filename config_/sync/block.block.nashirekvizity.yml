@@ -1,0 +1,25 @@
+uuid: 39868c8c-751a-42df-a2dc-163ed7df4b0e
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:104c496e-54fe-42b0-8c17-34276174e790'
+  module:
+    - block_content
+  theme:
+    - mercury_radix
+id: nashirekvizity
+theme: mercury_radix
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:104c496e-54fe-42b0-8c17-34276174e790'
+settings:
+  id: 'block_content:104c496e-54fe-42b0-8c17-34276174e790'
+  label: 'Наши реквизиты'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

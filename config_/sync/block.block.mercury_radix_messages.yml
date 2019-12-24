@@ -1,0 +1,22 @@
+uuid: f0222d7a-e2ff-4bcf-8ecc-d652a3addde7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mercury_radix
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: mercury_radix_messages
+theme: mercury_radix
+region: header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Сообщения статуса'
+  provider: system
+  label_display: '0'
+visibility: {  }

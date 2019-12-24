@@ -1,0 +1,18 @@
+uuid: 24fcd3e9-59a3-493e-a66b-ec93636b2d67
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.news
+id: node.news.title
+field_name: title
+entity_type: node
+bundle: news
+label: Заголовок
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,37 @@
+uuid: 65ddd306-7c8f-4a5d-9dba-936e5cde78a5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tm_price
+    - node.type.tariff_maintenance
+    - paragraphs.paragraphs_type.price_maintenance
+  module:
+    - entity_reference_revisions
+id: node.tariff_maintenance.field_tm_price
+field_name: field_tm_price
+entity_type: node
+bundle: tariff_maintenance
+label: Цена
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      price_maintenance: price_maintenance
+    target_bundles_drag_drop:
+      price_maintenance:
+        enabled: true
+        weight: 4
+      price:
+        weight: 5
+        enabled: false
+      service_details:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

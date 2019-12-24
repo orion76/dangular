@@ -1,0 +1,30 @@
+uuid: 02dd7175-4779-4bad-9391-83810c014fb9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.type-activity
+  module:
+    - system
+  theme:
+    - mercury_radix
+id: tipydeytelnosti
+theme: mercury_radix
+region: content
+weight: -3
+provider: null
+plugin: 'system_menu_block:type-activity'
+settings:
+  id: 'system_menu_block:type-activity'
+  label: 'Типы деятельности'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/services-maintenance\r\n/services-maintenance/*"
+    negate: false
+    context_mapping: {  }

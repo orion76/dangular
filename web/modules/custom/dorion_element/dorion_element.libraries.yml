@@ -1,0 +1,6 @@
+dorion_element:
+  js:
+    js/dorion_element.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

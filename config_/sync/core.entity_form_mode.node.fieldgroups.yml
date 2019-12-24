@@ -1,0 +1,10 @@
+uuid: 2a389ae9-496e-410a-a5ef-f28f515b6b4a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.fieldgroups
+label: FieldGroups
+targetEntityType: node
+cache: true

@@ -1,0 +1,13 @@
+{
+    "name": "paragraphs_plugins",
+    "type": "drupal-module",
+    "description": "Paragraphs behavior plugins",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/paragraphs_plugins",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/paragraphs_plugins",
+        "source": "http://cgit.drupalcode.org/paragraphs_plugins"
+    }
+}

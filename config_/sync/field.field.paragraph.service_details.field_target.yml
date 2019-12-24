@@ -1,0 +1,23 @@
+uuid: 84b32dd3-ec62-484f-a86b-6bd6129932cb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_target
+    - paragraphs.paragraphs_type.service_details
+  module:
+    - options
+id: paragraph.service_details.field_target
+field_name: field_target
+entity_type: paragraph
+bundle: service_details
+label: Назначение
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'per month for 1 site'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

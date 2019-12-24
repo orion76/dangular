@@ -1,0 +1,11 @@
+uuid: c5e84fb4-dafa-4c03-b7dc-66b403a42354
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.price_unit
+id: taxonomy_term.price_unit
+target_entity_type_id: taxonomy_term
+target_bundle: price_unit
+default_langcode: site_default
+language_alterable: false

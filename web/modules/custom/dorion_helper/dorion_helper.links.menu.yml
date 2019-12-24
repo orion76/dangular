@@ -1,0 +1,8 @@
+
+# Dorion config menu items definition
+#entity.dorion_attributes.collection:
+#  title: 'Dorion config'
+#  route_name: entity.dorion_attributes.collection
+#  description: 'List Dorion config (bundles)'
+#  parent: system.admin_structure
+#  weight: 99

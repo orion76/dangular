@@ -1,0 +1,11 @@
+uuid: 30d5a1bf-7741-459c-98b1-6b0d8f68ba52
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.certificate
+id: taxonomy_term.certificate
+target_entity_type_id: taxonomy_term
+target_bundle: certificate
+default_langcode: site_default
+language_alterable: false

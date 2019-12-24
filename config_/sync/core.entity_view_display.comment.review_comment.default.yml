@@ -1,0 +1,57 @@
+uuid: e32e1dd2-0be6-477d-816e-d5ac0b1e662e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - comment.type.review_comment
+    - field.field.comment.review_comment.comment_body
+  module:
+    - gpb_layouts
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: gpb_layout_one_column
+        layout_settings:
+          layout_class: ''
+          wrapper_class: ''
+        components:
+          1d487106-9a9f-477a-abee-006f9cd7e7b6:
+            uuid: 1d487106-9a9f-477a-abee-006f9cd7e7b6
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:comment:review_comment:comment_body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: comment.review_comment.default
+targetEntityType: comment
+bundle: review_comment
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: d1034f20-a4a6-4f4e-9c8b-a34aef2459e2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.service_maintenance
+id: node.service_maintenance
+target_entity_type_id: node
+target_bundle: service_maintenance
+default_langcode: site_default
+language_alterable: false

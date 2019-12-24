@@ -1,0 +1,29 @@
+uuid: f68a1da3-ba0d-47d1-9b5e-0cf9f2c74962
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tm_tariff_name
+    - node.type.tariff_maintenance
+    - taxonomy.vocabulary.tariff_maintenance
+id: node.tariff_maintenance.field_tm_tariff_name
+field_name: field_tm_tariff_name
+entity_type: node
+bundle: tariff_maintenance
+label: Тариф
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tariff_maintenance: tariff_maintenance
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: eef6434f-3d27-4dac-85e3-6c4d5e7476cb
+langcode: ru
+status: true
+dependencies: {  }
+id: yandex_map
+label: 'Yandex map'
+revision: 0
+description: ''

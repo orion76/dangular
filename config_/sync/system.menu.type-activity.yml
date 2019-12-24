@@ -1,0 +1,8 @@
+uuid: 03917e82-4115-4621-9cc7-d913c27e000f
+langcode: ru
+status: true
+dependencies: {  }
+id: type-activity
+label: 'Типы дейтельности'
+description: ''
+locked: false

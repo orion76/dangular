@@ -1,0 +1,48 @@
+uuid: 00d1b839-134b-4f83-b991-e588af7184fb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.manager
+    - field.field.node.review.field_comment
+    - field.field.node.review.field_contacts
+    - field.field.node.review.field_content
+    - node.type.review
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.review.manager
+targetEntityType: node
+bundle: review
+mode: manager
+content:
+  field_contacts:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_content:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_comment: true
+  langcode: true

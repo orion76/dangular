@@ -1,0 +1,6 @@
+entity.dorion_element.add_form:
+  route_name: entity.dorion_element.add_form
+  title: 'Add Dorion element'
+  appears_on:
+    - entity.dorion_element.collection
+

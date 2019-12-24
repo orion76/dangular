@@ -1,0 +1,13 @@
+{
+    "name": "dorion_config",
+    "type": "drupal-module",
+    "description": "My Awesome Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/dorion_config",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/dorion_config",
+        "source": "http://cgit.drupalcode.org/dorion_config",
+    },
+}

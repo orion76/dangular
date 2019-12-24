@@ -1,0 +1,22 @@
+uuid: 15d8e4ba-d193-406a-a3a4-e1cdd9bc520b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.document
+  module:
+    - text
+id: node.document.body
+field_name: body
+entity_type: node
+bundle: document
+label: Комментарий
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

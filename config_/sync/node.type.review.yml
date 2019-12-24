@@ -1,0 +1,17 @@
+uuid: 78e0d8ba-fd51-406d-94b6-56c84154fb1e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Отзывы
+type: review
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

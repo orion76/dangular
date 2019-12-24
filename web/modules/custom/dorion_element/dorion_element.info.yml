@@ -1,0 +1,8 @@
+name: 'dorion_element'
+type: module
+description: 'Dorion elements plugins module'
+core: 8.x
+package: 'dorion'
+dependencies:
+  - dorion_helper
+  - dorion_attributes

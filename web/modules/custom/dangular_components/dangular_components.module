@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains dangular_components.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dangular_components_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dangular_components module.
+    case 'help.page.dangular_components':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Angular 2+ web-components for Drupal 8') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dangular_components_theme() {
+  return [
+    'dangular_components' => [
+      'render element' => 'children',
+    ],
+  ];
+}

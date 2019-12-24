@@ -1,0 +1,5 @@
+dorion_attributes.config.element.attributes_available:
+  type: mapping
+
+dorion_attributes.config.element.attributes_custom:
+  type: mapping

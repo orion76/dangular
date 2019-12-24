@@ -1,0 +1,11 @@
+uuid: 2f137626-5d6b-48e2-8b4d-b00379096b5d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.contact_form
+id: node.contact_form
+target_entity_type_id: node
+target_bundle: contact_form
+default_langcode: site_default
+language_alterable: false

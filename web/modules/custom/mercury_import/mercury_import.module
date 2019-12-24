@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains mercury_import.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mercury_import_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mercury_import module.
+    case 'help.page.mercury_import':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Site import content') . '</p>';
+      return $output;
+
+    default:
+  }
+}

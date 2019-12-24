@@ -1,0 +1,30 @@
+uuid: 7c7c5cdf-77f6-4e86-9987-94c0151bd976
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.price_maintenance.field_price
+    - field.field.paragraph.price_maintenance.field_price_action
+    - paragraphs.paragraphs_type.price_maintenance
+id: paragraph.price_maintenance.default
+targetEntityType: paragraph
+bundle: price_maintenance
+mode: default
+content:
+  field_price:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_price_action:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true

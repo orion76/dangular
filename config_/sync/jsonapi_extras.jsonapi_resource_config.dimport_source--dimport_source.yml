@@ -1,0 +1,35 @@
+uuid: d30a195a-0ad1-4594-a0e6-cb8f0592076f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - dimport_config
+id: dimport_source--dimport_source
+disabled: true
+path: dimport_source/dimport_source
+resourceType: dimport_source--dimport_source
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false

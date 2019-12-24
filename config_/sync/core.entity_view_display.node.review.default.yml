@@ -1,0 +1,39 @@
+uuid: cf4cacad-99d0-438a-a4d1-7fe13600e191
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.review_comment.default
+    - field.field.node.review.field_comment
+    - field.field.node.review.field_contacts
+    - field.field.node.review.field_content
+    - node.type.review
+  module:
+    - comment
+    - text
+    - user
+id: node.review.default
+targetEntityType: node
+bundle: review
+mode: default
+content:
+  field_comment:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_content:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_contacts: true
+  langcode: true
+  links: true

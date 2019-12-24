@@ -1,0 +1,8 @@
+uuid: a61a3e2f-371f-43cc-b990-3106db5eebf7
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Назначение (услуга-обслуживание)'
+vid: target_service_maintenance
+description: ''
+weight: 0

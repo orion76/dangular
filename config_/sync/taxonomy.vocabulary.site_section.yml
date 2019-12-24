@@ -1,0 +1,8 @@
+uuid: 2f7896ad-f066-414e-9e2b-ad20aa803a1e
+langcode: ru
+status: true
+dependencies: {  }
+name: '(сайт) Раздел'
+vid: site_section
+description: ''
+weight: 0

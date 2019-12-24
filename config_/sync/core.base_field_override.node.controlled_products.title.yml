@@ -1,0 +1,18 @@
+uuid: 294fe1ff-a953-4177-a197-d231a76363e6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.controlled_products
+id: node.controlled_products.title
+field_name: title
+entity_type: node
+bundle: controlled_products
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
